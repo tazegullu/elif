@@ -3,10 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Document</title>
+    <script src="app.js"></script>
+    <link href="main.css" rel="stylesheet">
 </head>
 <body>
-    İlaç Hesaplama
+    <div class="container">
+        <div class="rowContent">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="">KG</span>
+                </div>
+                <input id="kg" type="number" class="form-control" oninput="Calculate()">
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="">ML</span>
+                </div>
+                <input id="ml" type="number" class="form-control" oninput="Calculate()">
+              </div>
+        </div>
+        <div class="rowContent">
+            <h3 id="total"></h3>
+        </div>
+        <div class="rowContent">
+            <h3 id="doz"></h3>
+        </div>
+
+
     
+      
+    </div>
 </body>
 </html>
